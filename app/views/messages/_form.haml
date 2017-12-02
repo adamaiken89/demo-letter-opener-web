@@ -1,0 +1,20 @@
+= simple_form_for message, remote: true do |f|
+  .fieldset
+    .row
+      .col-lg-3
+        = f.input :recipient, placeholder: 'Recipient', label: false
+      .col-lg-9
+        = f.input :recipient_email, placeholder: 'to@example.com', label: false
+    .row
+      .col-lg-3
+        = f.input :sender, placeholder: 'Sender', label: false
+      .col-lg-9
+        = f.input :sender_email, placeholder: 'from@example.com', label: false
+    %hr
+    = f.input :subject, placeholder: 'Subject', label: false
+    %hr
+    = f.input :content, as: :text, label: false, input_html: {rows: 5}
+    %hr
+    .form-actions.float-right
+      = f.button :submit, 'Send!', class: "btn btn-primary", data: { disable_with: "Please wait..." } 
+      = f.button :button, "Reset", type: :reset, class: "btn btn-secondary"
