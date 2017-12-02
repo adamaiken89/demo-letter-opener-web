@@ -5,11 +5,13 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby "2.5.1"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.4'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'rails', '~> 5.2'
+# Use postgres as the database for Active Record
+gem 'pg'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -36,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'hamlit'
 gem 'simple_form'
 gem 'jquery-rails'
-gem 'bootstrap', '~> 4.0.0.beta2.1'
+gem 'bootstrap', '>= 4.1.2'
 
 gem 'letter_opener_web'
 
