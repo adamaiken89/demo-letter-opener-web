@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby "2.5.1"
+ruby "2.6.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2'
@@ -38,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'hamlit'
 gem 'simple_form'
 gem 'jquery-rails'
-gem 'bootstrap', '>= 4.1.2'
+gem 'bootstrap', '~> 4.3.1'
 
 gem 'letter_opener_web'
 
